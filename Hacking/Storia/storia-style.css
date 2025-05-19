@@ -1,0 +1,112 @@
+/* Stili specifici per la pagina Storia dell'Hacking */
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0;
+  list-style: none;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  width: 2px;
+  background-color: var(--accent-color);
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -1px;
+}
+
+.event {
+  padding: 10px 40px;
+  position: relative;
+  width: 50%;
+  box-sizing: border-box;
+  margin-bottom: 30px;
+}
+
+.event:nth-child(odd) {
+  left: 0;
+  text-align: right;
+}
+
+.event:nth-child(even) {
+  left: 50%;
+}
+
+.year {
+  padding: 10px 15px;
+  background-color: var(--accent-color);
+  color: #0d1117;
+  border-radius: 6px;
+  font-weight: 600;
+  display: inline-block;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.description {
+  background-color: var(--primary-bg);
+  padding: 15px;
+  border-radius: 6px;
+  border: 1px solid var(--border-color);
+  position: relative;
+}
+
+.event:nth-child(odd) .description {
+  margin-right: 20px;
+}
+
+.event:nth-child(even) .description {
+  margin-left: 20px;
+}
+
+.event::after {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-color: var(--accent-color);
+  border-radius: 50%;
+  top: 15px;
+}
+
+.event:nth-child(odd)::after {
+  right: -8px;
+}
+
+.event:nth-child(even)::after {
+  left: -8px;
+}
+
+@media (max-width: 768px) {
+  .timeline::before {
+    left: 31px;
+  }
+  
+  .event {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+  
+  .event:nth-child(even) {
+    left: 0;
+  }
+  
+  .event:nth-child(odd) {
+    text-align: left;
+  }
+  
+  .event:nth-child(odd)::after,
+  .event:nth-child(even)::after {
+    left: 23px;
+  }
+  
+  .event:nth-child(odd) .description,
+  .event:nth-child(even) .description {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
