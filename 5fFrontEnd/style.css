@@ -1,0 +1,19 @@
+#flexContainer {
+  display: flex;
+  justify-content: space-between;
+  background-color: lightblue;
+  padding: 10px 20px;
+}
+
+#gridContainer {
+  display: grid;
+  gap: 100px;
+  margin-top: 20px;
+}
+
+.box {
+  background-color: coral;
+  width: 30dvw;
+  height: 30dvw;
+  color: white;
+}
