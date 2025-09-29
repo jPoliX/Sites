@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Ripasso</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <h1 class="titolo">RIPASSO</h1>
+
+  <h2>Modulo di Contatto</h2>
+
+  <form action="prova.html" method="get">
+    <label for="fname">Nome:</label><br>
+    <input type="text" id="fname" name="fname"><br><br>
+
+    <label for="lname">Cognome:</label><br>
+    <input type="text" id="lname" name="lname"><br><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email"><br><br>
+
+    <p>Genere:</p>
+    <input type="radio" id="maschio" name="genere" value="Maschio">
+    <label for="maschio">Maschio</label><br>
+
+    <input type="radio" id="femmina" name="genere" value="Femmina">
+    <label for="femmina">Femmina</label><br>
+
+    <input type="radio" id="altro" name="genere" value="Altro">
+    <label for="altro">Altro</label><br><br>
+
+    <p>Preferenze di contatto:</p>
+    <input type="checkbox" id="notifiche" name="preferenze" value="Notifiche">
+    <label for="notifiche">Ricevere notifiche via email</label><br>
+
+    <input type="checkbox" id="newsletter" name="preferenze" value="Newsletter">
+    <label for="newsletter">Iscrivermi alla newsletter</label><br>
+
+    <input type="checkbox" id="sms" name="preferenze" value="SMS">
+    <label for="sms">Essere contattato via SMS</label><br><br>
+
+    <input type="submit" value="Invia">
+  </form>
+  <hr>
+
+  <h2 class="titolo">RIPASSO JS</h2>
+  <button id="sfondo">Premi per cambiare colore dello sfondo</button>
+  <button id="bottone">Premi per aggiungere una scritta</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
