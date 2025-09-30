@@ -39,5 +39,29 @@ console.log("Browser:", navigator.userAgent);
 setTimeout(() => {
   location.reload();
 }, 5000);
+/*
+//Concatenare le stringhe e metterle maiuscole
+let s = 'ciao';
+console.log(s.concat("oggi è una bella giornata").replace(s, "buongiorno ").toUpperCase());
+let colors = ['rosso', 'verde', 'blu', 'nero', 'bianco'];
+
+//Stampa indice e contenuto array con forEach
+function miaFunzione(e, i){
+  console.log("Colore: " + e.toUpperCase(), " Indice: " + i);
+}
+colors.forEach(miaFunzione);
+
+//Estraggo numeri maggiori di 20
+let numeri = [3, 6, 12, 89, 67, 24, 7, 19, 21, 55];
+console.log(numeri.filter(n => n > 20));
+
+//Al quadrato i numeri dell'array
+let array = [1, 2, 3, 4];
+console.log(array.map(n => n*n));
+
+//Somma numeri dell'array
+let casuali = [1, 2, 3, 4, 5];
+console.log(casuali.reduce((acc, num) => acc + num));
+*/
 
 
